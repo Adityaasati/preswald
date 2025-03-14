@@ -77,8 +77,9 @@ The script includes built-in error handling:
 Special thanks to:
 
 - **Pandas & Plotly** for data manipulation and visualization.
-- **Preswald (pw)** for handling interactive UI elements.
-- **The Kaggle Community** for their valuable insights and best practices.
+- **Preswald Team (pw)** for building a seamless platform that eliminates frontend concerns, allowing me to focus on insights.
+- **Kaggle** for providing free datasets that power data-driven decisions.
+
 
 
 
