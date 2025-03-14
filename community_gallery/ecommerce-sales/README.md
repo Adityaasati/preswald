@@ -1,35 +1,84 @@
-📦 Preswald Project: E-commerce Sales Analysis
-📊 Multi-Source Sales Dashboard with Filtering & Insights
+# 📊 E-Commerce & Warehouse Overview Dashboard
 
-📌 Overview
-This project provides a data-driven dashboard for analyzing E-commerce sales trends across multiple datasets.
-Using Preswald, we process three CSV files to generate key insights, financial calculations, and category-based filtering.
+## 🚀 Introduction
 
-📂 Data Sources
-We use three datasets in this project:
+Welcome to the **E-Commerce & Warehouse Overview Dashboard**! This interactive dashboard helps you analyze sales, stock, and pricing data across various marketplaces, ensuring efficient inventory management and strategic decision-making.
 
-1️⃣ Amazon_Sale_Report.csv → Contains sales data from Amazon, including products, categories, and transaction details.
-2️⃣ P_L_March_2021.csv → Profit and loss statement for March 2021, used for financial analysis.
-3️⃣ Sale_Report.csv → General sales data from multiple sources, providing a broader view of transactions.
+This analysis uses the "E-Commerce Sales Dataset" dataset from Kaggle, available at: https://www.kaggle.com/datasets/thedevastator/unlock-profits-with-e-commerce-sales-data
 
-📂 All datasets are stored inside the data/ folder.
+## 🔥 Key Features
 
-📊 Features
-✔ Aggregated Sales Insights → Get sales summaries across multiple datasets.
-✔ Category, State & Date Filtering → Analyze sales trends based on category, region, or custom date ranges.
-✔ Profit & Loss Computation → Compare revenue vs. expenses for financial insights.
-✔ Automated Data Processing → Reads CSV files, cleans data, and applies transformations.
-✔ Export Processed Data → Save the cleaned and filtered reports for further use.
+- **Sales Analysis**: Gain insights into top-selling products and categories.
+- **Stock Management**: Visualize stock availability across categories and sizes.
+- **Pricing Insights**: Compare pricing strategies across different marketplaces.
+- **Geographical Sales Trends**: Track revenue distribution across regions.
+- **Order Status Overview**: Monitor completed, pending, and canceled orders.
+- **Interactive Filters**: Filter data by state, category, or marketplace for a tailored view.
 
-🛠️ How It Works
-1️⃣ Loads Data → Reads Amazon_Sale_Report.csv, P_L_March_2021.csv, and Sale_Report.csv.
-2️⃣ Cleans & Merges Data → Removes duplicates, fills missing values, and aligns columns.
-3️⃣ Applies Filters → Users can filter sales by category, state, and time period.
-4️⃣ Performs Calculations → Computes total sales, average order value, profit margins, and other KPIs.
-5️⃣ Saves Processed Data → Results are exported for further analysis.
+## 📁 Dataset Requirements
 
-🚀 Running the Project
-🔹 Prerequisites
-Python 3.10
-Preswald SDK
-Required Libraries (install via requirements.txt)
+Ensure the following datasets are available in the `data/` directory:
+
+1. `Amazon_Sale_Report.csv`
+2. `Cloud_Warehouse_Compersion_Chart.csv`
+3. `P_L_March_2021.csv`
+4. `Sale_Report.csv`
+
+These files should contain:
+
+- **Amazon Sales Data**: Order details, amounts, shipping state, category, and SKU.
+- **Warehouse Data**: Stock comparisons across different cloud platforms.
+- **P&L Data**: Product pricing details across multiple marketplaces.
+- **Sales Report Data**: Stock levels and inventory details.
+
+
+## 📊 Data Cleaning & Processing
+
+The dashboard ensures data accuracy through:
+
+- **Date Formatting**: Converts dates into a consistent format.
+- **Numeric Conversion**: Ensures numerical columns are correctly parsed.
+- **Handling Missing Data**: Drops invalid entries while preserving essential information.
+- **Column Renaming**: Standardizes column names for seamless integration.
+
+## 📌 Interactive Visualizations
+
+The dashboard provides:
+
+- **🏆 Top Product Categories by Sales** *(Bar Chart)*
+- **📦 Stock Levels per Category** *(Sunburst Chart)*
+- **📅 Sales Trends Over Time** *(Line Chart)*
+- **💰 Sales by State** *(Bar & Line Combo Chart)*
+- **📊 Order Status Distribution** *(Horizontal Bar Chart)*
+- **🛒 Price Comparisons Across Marketplaces** *(Box Plot)*
+- **📏 Stock Distribution by Size** *(Funnel Chart)*
+- **🏷️ Stock by Design Number** *(Treemap)*
+
+## 🛠 Customization & Filters
+
+The dashboard allows users to:
+
+- **Select a Primary Dataset** (Amazon Sales, P&L, or Sales Report).
+- **Filter by State and Category** for granular insights.
+- **Analyze Orders by Status** to track fulfillment performance.
+
+## 🚨 Error Handling
+
+The script includes built-in error handling:
+
+- Displays an alert if CSV files are missing.
+- Handles incorrect data formats gracefully.
+- Ensures missing values do not break the dashboard.
+
+
+
+## 🙌 Acknowledgments
+
+Special thanks to:
+
+- **Pandas & Plotly** for data manipulation and visualization.
+- **Preswald (pw)** for handling interactive UI elements.
+- **The Kaggle Community** for their valuable insights and best practices.
+
+
+
